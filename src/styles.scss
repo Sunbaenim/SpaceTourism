@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/styles/reset.scss';
+@import './app/styles/main-style.scss';
+
+body {
+   overflow: hidden;
+}
+
+section {
+   min-height: 100vh;
+}
+
+a:-webkit-any-link {
+   color: $clr-secondary;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+hr {
+   height: 1px;
+   border: 0;
+   background-color: #383b4b;
+}

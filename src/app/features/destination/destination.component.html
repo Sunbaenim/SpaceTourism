@@ -1,0 +1,31 @@
+<section #section *ngIf="destinations">
+    <article class="text-align">
+        <h5 class="chapter-page ff-heading-4-to-6 fs-heading-5 text-secondary">
+            <span class="text-secondary-transparent fw-chapter">01</span>Pick your destination</h5>
+        <img [src]="'../../../assets/destination/image-' + destinations[indexDes].name.toLowerCase() + '.png'" alt="">
+        <div class="desktop-right">
+            <nav class="ff-nav fs-secondary-nav text-primary">
+                <ul role="list">
+                    <li *ngFor="let destination of destinations; let i = index" (click)="indexDes = i" [ngClass]="{'active' : indexDes == i}">{{destination.name}}</li>
+                </ul>
+            </nav>
+            <h2 class="ff-heading-1-to-3 fs-heading-2 text-secondary">{{destinations[indexDes].name}}</h2>
+            <p class="ff-body fs-body text-primary">{{destinations[indexDes].description}}</p>
+            <hr>
+            <table>
+                <tr class="ff-subheading-2 fs-subheading-2 text-primary">
+                    <th>Avg. distance</th>
+                </tr>
+                <tr>
+                    <td class="ff-subheading-1 fs-subheading-1 text-secondary">{{destinations[indexDes].distance}}</td>
+                </tr>
+                <tr>
+                    <th class="ff-subheading-2 fs-subheading-2 text-primary">Est. travel time</th>
+                </tr>
+                <tr>
+                    <td class="ff-subheading-1 fs-subheading-1 text-secondary">{{destinations[indexDes].travel}}</td>
+                </tr>
+            </table>
+        </div>
+    </article>
+</section>

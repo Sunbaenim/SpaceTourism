@@ -1,0 +1,20 @@
+<section>
+    <article class="text-align">
+        <h5 class="chapter-page ff-heading-4-to-6 fs-heading-5 text-secondary"><span class="text-secondary-transparent fw-bold">03</span>Space launch 101</h5>
+        <img [src]="'../../../assets/technology/image-' +
+        technologies[indexTechno].name.toLowerCase().replace(' ', '-') +
+        '-' +
+        (!isMediaDesktop ? 'landscape' : 'portrait') +
+        '.jpg'" alt="">
+        <div class="desktop-left">
+            <div class="circle-nav">
+                <div class="button-s" *ngFor="let technology of technologies; let i = index" (click)="indexTechno = i" [ngClass]="{'active': indexTechno == i}">{{i + 1}}</div>
+            </div>
+            <div class="bloc">
+                <h6 class="ff-heading-4-to-6 fs-heading-6 text-primary">The terminology...</h6>
+                <h3 class="ff-heading-1-to-3 fs-heading-3 text-secondary">{{technologies[indexTechno].name}}</h3>
+                <p class="ff-body fs-body text-primary">{{technologies[indexTechno].description}}</p>
+            </div>
+        </div>
+    </article>
+</section>

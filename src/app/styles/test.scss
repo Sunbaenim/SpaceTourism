@@ -1,0 +1,24 @@
+$fs-10: 1.125rem;
+$fs-12: 0.9375rem;
+
+$fs-body: $fs-12;
+
+.fs-body {
+    font-size: $fs-body;
+}
+
+@media (min-width: 48em) {
+    $fs-body: $fs-10;
+    .fs-body {
+        font-size: $fs-body;
+    }
+}
+
+@media (min-width: 90em) {
+    $fs-body: $fs-12;
+    .fs-body {
+        font-size: $fs-body;
+    }
+}
+
+

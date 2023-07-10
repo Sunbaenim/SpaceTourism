@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  isMediaDesktop: boolean = window.innerWidth >= 1440;
+
 }

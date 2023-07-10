@@ -1,0 +1,523 @@
+/* font size */
+
+$fs-1: 9.375rem;
+$fs-2: 6.25rem;
+$fs-3: 5rem;
+$fs-4: 3.5rem;
+$fs-5: 2.5rem;
+$fs-6: 2rem;
+$fs-7: 1.75rem;
+$fs-8: 1.5rem;
+$fs-9: 1.25rem;
+$fs-10: 1.125rem;
+$fs-11: 1rem;
+$fs-12: 0.9375rem;
+$fs-13: 0.875rem;
+
+$fs-main-nav: $fs-11;
+$fs-secondary-nav: $fs-13;
+$fs-body: $fs-12;
+$fs-button-s: $fs-11;
+$fs-button-xl: $fs-9;
+
+$fs-heading-1: $fs-3; //SPACE
+$fs-heading-2: $fs-4; //MOON
+$fs-heading-3: $fs-8; //NAME CREW & LAUNCH VEHICLE
+$fs-heading-4: $fs-11; //SUBTITLE CREW
+$fs-heading-5: $fs-11; //CHAPTER PAGE & SUBTITLE HOME
+$fs-heading-6: $fs-13; //TERMINOLOGY TEXT
+
+$fs-subheading-1: $fs-7; //TABLE DATA
+$fs-subheading-2: $fs-13; //TABLE TITLE
+
+/* letter spacing */
+
+$ls-1: 0.295rem;
+$ls-1-5: 0.21125rem;
+$ls-2: 0.16875rem;
+$ls-3: 0.1475rem;
+$ls-4: 0.125rem;
+$ls-5: 0.09375rem;
+$ls-6: 0.078125rem;
+$ls-7: 0.0625rem;
+
+$ls-main-nav: $ls-2;
+$ls-secondary-nav: $ls-3;
+$ls-button-s: $ls-7;
+$ls-button-xl: $ls-6;
+
+$ls-heading-5: $ls-2;
+$ls-heading-6: $ls-3;
+
+$ls-subheading-2: $ls-3;
+
+/* font size classes & letter spacing classes */
+
+.fs-main-nav {
+    font-size: $fs-main-nav;
+    letter-spacing: $ls-main-nav;
+    text-transform: uppercase;
+}
+
+.fs-secondary-nav {
+    font-size: $fs-secondary-nav;
+    letter-spacing: $ls-secondary-nav;
+    text-transform: uppercase;
+}
+
+.fs-body {
+    font-size: $fs-body;
+    line-height: 1.5625rem;
+}
+
+.fs-heading-1 {
+    font-size: $fs-heading-1;
+    text-transform: uppercase;
+}
+
+.fs-heading-2 {
+    font-size: $fs-heading-2;
+    text-transform: uppercase;
+}
+
+.fs-heading-3 {
+    font-size: $fs-heading-3;
+    text-transform: uppercase;
+}
+
+.fs-heading-4 {
+    font-size: $fs-heading-4;
+    text-transform: uppercase;
+}
+
+.fs-heading-5 {
+    font-size: $fs-heading-5;
+    letter-spacing: $ls-heading-5;
+    text-transform: uppercase;
+}
+
+.fs-heading-6 {
+    font-size: $fs-heading-6;
+    letter-spacing: $ls-heading-6;
+    text-transform: uppercase;
+}
+
+.fs-subheading-1 {
+    font-size: $fs-subheading-1;
+    text-transform: uppercase;
+}
+
+.fs-subheading-2 {
+    font-size: $fs-subheading-2;
+    letter-spacing: $ls-subheading-2;
+    text-transform: uppercase;
+}
+
+/* font family */
+
+$ff-primary: 'Barlow', sans-serif;
+$ff-secondary: 'Bellefair', serif;
+$ff-accent: 'Barlow Condensed', sans-serif;
+
+$ff-nav: $ff-accent;
+$ff-body: $ff-primary;
+$ff-button: $ff-secondary;
+
+$ff-heading-1-to-3: $ff-secondary;
+$ff-heading-4-to-6: $ff-accent;
+
+$ff-subheading-1: $ff-secondary;
+$ff-subheading-2: $ff-accent;
+
+/* font family classes */
+
+.ff-nav {
+    font-family: $ff-nav;
+}
+
+.ff-body {
+    font-family: $ff-body;
+}
+
+.ff-button {
+    font-family: $ff-button;
+}
+
+.ff-heading-1-to-3 {
+    font-family: $ff-heading-1-to-3;
+}
+
+.ff-heading-4-to-6 {
+    font-family: $ff-heading-4-to-6;
+}
+
+.ff-subheading-1 {
+    font-family: $ff-subheading-1;
+}
+
+.ff-subheading-2 {
+    font-family: $ff-subheading-2;
+}
+
+/* color */
+
+$clr-primary: hsl(231, 77%, 90%);
+$clr-secondary: hsl(0, 0%, 100%);
+$clr-secondary-transparent: hsl(0, 0%, 100%, 0.25);
+$clr-secondary-transparent-nav: hsl(0, 0%, 100%, 0.04);
+$clr-accent: hsl(230, 35%, 7%);
+
+/* color classes */
+
+.text-primary {
+    color: $clr-primary;
+}
+
+.text-secondary {
+    color: $clr-secondary;
+}
+
+.text-secondary-transparent {
+    color: $clr-secondary-transparent;
+}
+
+.text-accent {
+    color: $clr-accent;
+}
+
+/* background color classes */
+
+.bg-primary {
+    background-color: $clr-primary;
+}
+
+.bg-secondary {
+    background-color: $clr-secondary;
+}
+
+.bg-accent {
+    background-color: $clr-accent;
+}
+
+/* font weight */
+
+$fw-bold: 700;
+
+/* font weight classes */
+
+.fw-chapter {
+    font-weight: $fw-bold;
+}
+
+/* buttons */
+
+.button-s {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $clr-accent;
+    color: $clr-secondary;
+    border: 1px solid $clr-secondary-transparent;
+    font-size: $fs-button-s;
+    font-family: $ff-secondary;
+    letter-spacing: $ls-button-s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button-s:hover {
+    border: 1px solid $clr-secondary;
+}
+
+.button-s.active {
+    background-color: $clr-secondary;
+    color: $clr-accent;
+    border: none;
+}
+
+.button-xl {
+    display: grid;
+    align-items: center;
+    width: 9.375rem;
+    height: 9.375rem;
+    background-color: $clr-secondary;
+    color: $clr-accent;
+    font-size: $fs-button-xl;
+    font-family: $ff-secondary;
+    letter-spacing: $ls-button-xl;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+/* other */
+
+.nav-glass {
+    background-color: $clr-secondary-transparent-nav;
+    backdrop-filter: blur(41px);
+    -webkit-backdrop-filter: blur(41px);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+.text-align {
+    text-align: center;
+}
+
+article {
+    width: 20.4375em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5.5rem;
+}
+
+section {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.chapter-page > span {
+    margin-right: 1.125rem;
+}
+
+/* media queries */
+
+/* tablette */
+
+@media (min-width: 48em) {
+    $fs-main-nav: $fs-13;
+    $fs-secondary-nav: $fs-11;
+    $fs-body: $fs-11;
+    $fs-button-s: $fs-8;
+    $fs-button-xl: $fs-6;
+
+    $fs-heading-1: $fs-1;
+    $fs-heading-2: $fs-3;
+    $fs-heading-3: $fs-5;
+    $fs-heading-4: $fs-8;
+    $fs-heading-5: $fs-9;
+    $fs-heading-6: $fs-11;
+
+    $fs-subheading-1: $fs-7;
+    $fs-subheading-2: $fs-13;
+
+    $ls-main-nav: $ls-3;
+    $ls-secondary-nav: $ls-2;
+    $ls-button-s: $ls-5;
+    $ls-button-xl: $ls-4;
+
+    $ls-heading-5: $ls-1-5;
+    $ls-heading-6: $ls-2;
+
+    .fs-main-nav {
+        font-size: $fs-main-nav;
+        letter-spacing: $ls-main-nav;
+        text-transform: uppercase;
+    }
+    
+    .fs-secondary-nav {
+        font-size: $fs-secondary-nav;
+        letter-spacing: $ls-secondary-nav;
+        text-transform: uppercase;
+    }
+    
+    .fs-body {
+        font-size: $fs-body;
+        line-height: 1.75rem;
+    }
+    
+    .fs-heading-1 {
+        font-size: $fs-heading-1;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-2 {
+        font-size: $fs-heading-2;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-3 {
+        font-size: $fs-heading-3;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-4 {
+        font-size: $fs-heading-4;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-5 {
+        font-size: $fs-heading-5;
+        letter-spacing: $ls-heading-5;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-6 {
+        font-size: $fs-heading-6;
+        letter-spacing: $ls-heading-6;
+        text-transform: uppercase;
+    }
+    
+    .fs-subheading-1 {
+        font-size: $fs-subheading-1;
+        text-transform: uppercase;
+    }
+    
+    .fs-subheading-2 {
+        font-size: $fs-subheading-2;
+        letter-spacing: $ls-subheading-2;
+        text-transform: uppercase;
+    }
+
+    .button-s {
+        font-size: $fs-button-s;
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .button-xl {
+        width: 15.125rem;
+        height: 15.125rem;
+        font-size: $fs-button-xl;
+        letter-spacing: $ls-button-xl;
+    }
+
+    article, hr {
+        width: 35.8125rem;
+    }
+
+    article {
+        padding-top: 13.75rem;
+    }
+
+    .chapter-page {
+        position: absolute;
+        top: 8.5rem;
+        left: 2.375rem;
+    }
+}
+
+/* desktop */
+
+@media (min-width: 90em) {
+    $fs-main-nav: $fs-13;
+    $fs-secondary-nav: $fs-11;
+    $fs-body: $fs-10;
+    $fs-button-s: $fs-6;
+    $fs-button-xl: $fs-6;
+    
+    $fs-heading-1: $fs-1;
+    $fs-heading-2: $fs-2;
+    $fs-heading-3: $fs-4;
+    $fs-heading-4: $fs-6;
+    $fs-heading-5: $fs-7;
+    $fs-heading-6: $fs-11;
+    
+    $fs-subheading-1: $fs-7;
+    $fs-subheading-2: $fs-13;
+
+    $ls-main-nav: $ls-2;
+    $ls-button-s: $ls-4;
+
+    $ls-heading-5: $ls-1;
+
+    .fs-main-nav {
+        font-size: $fs-main-nav;
+        letter-spacing: $ls-main-nav;
+        text-transform: uppercase;
+    }
+    
+    .fs-secondary-nav {
+        font-size: $fs-secondary-nav;
+        letter-spacing: $ls-secondary-nav;
+        text-transform: uppercase;
+    }
+    
+    .fs-body {
+        font-size: $fs-body;
+        line-height: 2rem;
+    }
+    
+    .fs-heading-1 {
+        font-size: $fs-heading-1;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-2 {
+        font-size: $fs-heading-2;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-3 {
+        font-size: $fs-heading-3;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-4 {
+        font-size: $fs-heading-4;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-5 {
+        font-size: $fs-heading-5;
+        letter-spacing: $ls-heading-5;
+        text-transform: uppercase;
+    }
+    
+    .fs-heading-6 {
+        font-size: $fs-heading-6;
+        letter-spacing: $ls-heading-6;
+        text-transform: uppercase;
+    }
+    
+    .fs-subheading-1 {
+        font-size: $fs-subheading-1;
+        text-transform: uppercase;
+    }
+    
+    .fs-subheading-2 {
+        font-size: $fs-subheading-2;
+        letter-spacing: $ls-subheading-2;
+        text-transform: uppercase;
+    }
+    
+    .text-align {
+        text-align: left;
+    }
+
+    .button-s {
+        font-size: $fs-button-s;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .button-xl {
+        width: 17.125rem;
+        height: 17.125rem;
+        font-size: $fs-button-xl;
+        letter-spacing: $ls-button-xl;
+    }
+
+    article {
+        display: flex;
+        width: 70rem;
+        padding-top: 19.375rem;
+    }
+
+    .chapter-page {
+        top: 13.25rem;
+        left: 10.375rem;
+    }
+}

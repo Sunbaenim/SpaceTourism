@@ -1,0 +1,98 @@
+section {
+    background-image: url(../../../assets/technology/background-technology-mobile.jpg);
+}
+
+article {
+    width: 100%;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.desktop-left {
+    width: 20.4375em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.625rem;
+}
+
+h3 {
+    margin-top: 0.56rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+@media (min-width: 48em) {
+    section {
+        background-image: url(../../../assets/technology/background-technology-tablet.jpg);
+    }
+
+    article {
+        padding-top: 13.75rem;
+    }
+
+    .desktop-left {
+        width: 28.625rem;
+    }
+
+    img {
+        margin-top: 0;
+        margin-bottom: 3.5rem;
+    }
+
+    .circle-nav {
+        margin-bottom: 2.75rem;
+    }
+
+    h3 {
+        margin-top: 1rem;
+    }
+
+    p {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 90em) {
+    section {
+        background-image: url(../../../assets/technology/background-technology-desktop.jpg);
+    }
+
+    article {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 17rem;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    .desktop-left {
+        width: 40rem;
+        display: flex;
+        gap: 5rem;
+    }
+
+    .circle-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0;
+        margin: 0;
+    }
+}

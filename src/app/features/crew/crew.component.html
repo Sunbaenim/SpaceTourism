@@ -1,0 +1,18 @@
+<section>
+    <article class="text-align">
+        <h5 class="chapter-page ff-heading-4-to-6 fs-heading-5 text-secondary">
+            <span class="text-secondary-transparent fw-chapter">02</span>Meet your crew</h5>
+        <div class="img-container">
+            <img [src]="'../../../assets/crew/image-' + crew[indexCrew].name.toLowerCase().replace(' ', '-') + '.png'" alt="">
+        </div>
+        <div class="desktop-left">
+            <hr>
+            <div class="circle-nav">
+                <div class="circle" *ngFor="let crewMember of crew; let i = index" (click)="indexCrew = i" [ngClass]="{'active' : indexCrew == i}"></div>
+            </div>
+            <h4 class="ff-heading-1-to-3 fs-heading-4 text-secondary-transparent">{{crew[indexCrew].role}}</h4>
+            <h3 class="ff-heading-1-to-3 fs-heading-3 text-secondary">{{crew[indexCrew].name}}</h3>
+            <p class="ff-body fs-body text-primary">{{crew[indexCrew].bio}}</p>
+        </div>
+    </article>
+</section>
