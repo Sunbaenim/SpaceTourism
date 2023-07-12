@@ -8,7 +8,7 @@ import { DataService } from 'src/app/core/services/data.service';
 })
 export class CrewComponent {
 
-  crew!: CrewIndexModel[];
+  crew: CrewIndexModel[] = [];
   indexCrew: number = 0;
 
   constructor(

@@ -9,7 +9,7 @@ import { TechnologyIndexModel } from 'src/app/core/models/technologyIndex.model'
 export class TechnologyComponent {
 
   isMediaDesktop: boolean = window.innerWidth >= 1440;
-  technologies!: TechnologyIndexModel[];
+  technologies: TechnologyIndexModel[] = [];
   indexTechno: number = 0;
 
   constructor(

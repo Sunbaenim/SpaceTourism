@@ -80,11 +80,11 @@ p {
 
 @media (min-width: 90em) {
     section {
+        position: relative;
         background-image: url(../../../assets/crew/background-crew-desktop.jpg);
     }
 
     article {
-        position: relative;
         width: 70rem;
     }
 
@@ -101,9 +101,8 @@ p {
     }
 
     .circle-nav {
-        position: absolute;
-        bottom: 5rem;
-        left: 10rem;
+        position: unset;
+        margin-top: 2rem;
     }
 
     .circle {
@@ -112,6 +111,8 @@ p {
     }
 
     .desktop-left{
+        display: flex;
+        flex-direction: column-reverse;
         max-width: 40rem;
         margin-top: 4rem;
     }

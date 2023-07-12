@@ -8,7 +8,7 @@ import { DataService } from 'src/app/core/services/data.service';
 })
 export class DestinationComponent implements OnInit {
 
-  destinations!: DestinationIndexModel[];
+  destinations: DestinationIndexModel[] = [];
   indexDes: number = 0;
 
   constructor(
