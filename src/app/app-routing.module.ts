@@ -5,6 +5,7 @@ import { DestinationComponent } from './features/destination/destination.compone
 import { TechnologyComponent } from './features/technology/technology.component';
 
 const routes: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full'},
     { path: 'home', loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule) },
     { path: 'destination', component: DestinationComponent },
     { path: 'crew', component: CrewComponent },
