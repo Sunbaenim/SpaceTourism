@@ -16,14 +16,14 @@ export class DataService {
   ) { }
 
   getDestinations(): Observable<DestinationIndexModel[]> {
-    return this.client.get<DataIndexModel>('../../../assets/data.json').pipe(map(data => data.destinations));
+    return this.client.get<DataIndexModel>('assets/data.json').pipe(map(data => data.destinations));
   }
 
   getCrew(): Observable<CrewIndexModel[]> {
-    return this.client.get<DataIndexModel>('../../../assets/data.json').pipe(map(data => data.crew));
+    return this.client.get<DataIndexModel>('assets/data.json').pipe(map(data => data.crew));
   }
 
   getTechnologies(): Observable<TechnologyIndexModel[]> {
-    return this.client.get<DataIndexModel>('../../../assets/data.json').pipe(map(data => data.technology));
+    return this.client.get<DataIndexModel>('assets/data.json').pipe(map(data => data.technology));
   }
 }

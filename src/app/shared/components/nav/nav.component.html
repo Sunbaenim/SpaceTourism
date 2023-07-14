@@ -1,7 +1,7 @@
 <div class="nav-container" *ngIf="isMediaMobile">
     <button class="mobile-nav-toggle" aria-controls="main-nav" aria-expanded="false" (click)="toggleNav()">
-        <img class="menu-icon icon-hamburger" src="./../../../assets/shared/icon-hamburger.svg" alt="" aria-hidden="true" *ngIf="navToggle == false">
-        <img class="menu-icon icon-close" src="./../../../assets/shared/icon-close.svg" alt="" aria-hidden="false" *ngIf="navToggle">
+        <img class="menu-icon icon-hamburger" src="assets/shared/icon-hamburger.svg" alt="" aria-hidden="true" *ngIf="navToggle == false">
+        <img class="menu-icon icon-close" src="assets/shared/icon-close.svg" alt="" aria-hidden="false" *ngIf="navToggle">
     </button>
     <span class="visually-hidden">Menu</span>
     <div class="nav-wrapper | nav-glass" [ngClass]="{'opened' : navToggle}" [@navAnimation]="navToggle ? 'open' : 'closed'">
